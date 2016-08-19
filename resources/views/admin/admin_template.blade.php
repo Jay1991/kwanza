@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ $page_title or "AdminLTE Dashboard" }}</title>
+  <title>Admin | tiririka.co.tz</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -52,14 +52,14 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="skin-blue">
+<body class="skin-blue sidebar-mini">
 <div class="wrapper">
 
   <!-- Main Header -->
-  @include('header')
+  @include('admin.header')
 
   <!-- Sidebar -->
-  @include('sidebar')
+  @include('admin.sidebar')
 
 
   <!-- Content Wrapper. Contains page content -->
@@ -67,26 +67,29 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        {{ $page_title or "Page Title" }}
-        <small>{{ $page_description or null }}</small>
+        {{ $page_title or "Posts" }}
+        <small>{{ $page_description or "manage posts" }}</small>
       </h1>
       <!-- You can dynamically generate breadcrumbs here -->
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-        <li class="active">Here</li>
+        <li><a href="{{ url('/') }}">Check site</a></li>
+        <li><a href="#">Check Adsense Account</a></li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
       <!-- Your Page Content Here -->
+
+
+
       @yield('content')
     </section><!-- /.content -->
   </div><!-- /.content-wrapper -->
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->
-  @include('footer')
+  @include('admin.footer')
 
 </div><!-- ./wrapper -->
 
