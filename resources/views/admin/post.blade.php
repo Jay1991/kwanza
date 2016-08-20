@@ -15,7 +15,7 @@
                   </div>
               </div>
           </div>
-          <a href="">
+          <a href="{{ url('admin/create_post') }}">
           <div class="panel-footer">
               <span class="pull-right fa fa-arrow-circle-right"></span>
               <div></div>
