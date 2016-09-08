@@ -15,8 +15,9 @@
             <br>
             <hr class="line">
             <p class="text-justify">#{{ $page -> number }} {{ $page -> page_title }}</p>
+            <br>
             <div class="img-card-view text-center">
-              <img class="img-responsive" src="../../../media/{{ $page -> media}}"/>
+              <img class="img-responsive center-block" src="../../../media/{{ $page -> media}}"/>
               <small class="source">via <a>{{ $page -> media_source }}</a></small>
             </div>
             <br>
