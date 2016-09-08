@@ -12,17 +12,13 @@
 <!-- for blapy testing -->
           <div id="mainContainer" data-blapy-container="true" data-blapy-container-name="mainContainer" data-blapy-container-content="page">
             <a href="{{ url('post/'.$page -> post_id.'/nextPage/'.($page->number + 1)) }}" type="button" data-blapy-link="true"  class="btn btn-success pull-right">Next</a>
-            <!-- <button  id="next" type="button" class="btn btn-success pull-right">Next</button> -->
             <br>
             <hr class="line">
-            <div class="card-content">
-              <p class="text-justify">#{{ $page -> number }} {{ $page -> page_title }}</p>
-            </div>
-            <br>
-            <a href="{{ url('post/'.$page -> post_id.'/nextPage/'.($page->number + 1)) }}" class="img-card-view text-center">
+            <p class="text-justify">#{{ $page -> number }} {{ $page -> page_title }}</p>
+            <div class="img-card-view text-center">
               <img class="img-responsive" src="../../../media/{{ $page -> media}}"/>
-            </a>
               <small class="source">via <a>{{ $page -> media_source }}</a></small>
+            </div>
             <br>
             <div class="card-read-more">
               <p class="text-justify">{{ $page -> contents }}</p>

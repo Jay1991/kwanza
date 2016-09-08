@@ -4,7 +4,7 @@
 
 <div class="row">
   @foreach($pages as $page)
-  <div class="card-page-content col-xs-10 col-xs-offset-1 col-md-6" style="height:">
+  <div class="card-page-content col-xs-10 col-xs-offset-1 col-md-6">
     <div class="card-title-page">
       <h4 class="card-heading">{{ $page -> title }} </h4>
       <a href="{{ url('/view_end') }}" type="button" class="btn btn-success pull-right">Next</a>
@@ -12,14 +12,10 @@
     <br>
     <hr class="line">
     <div class="card-content">
-        <div class="">
-            #{{ $page -> number }} {{ $page -> page_title }}
-        </div>
+        <p class="text-justify">#{{ $page -> number }} {{ $page -> page_title }}</p>
     </div>
-    <br>
-    <div class="img-card-view text-center" href="{{ url('/view') }}">
-      <!-- <iframe src="//giphy.com/embed/FxEwsOF1D79za?hideSocial=true" class="giphy-embed" allowfullscreen="" width="480" height="431" frameborder="0"></iframe> -->
-        <img class="img-thumbnail" src="../../media/{{ $page -> media}}" style="height: auto;" />
+    <div class="img-card-view text-center">
+        <img class="img-thumbnail" src="../../media/{{ $page -> media}}" />
         <small>{{ $page -> media_source }}</small>
     </div>
     <br>
