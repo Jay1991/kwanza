@@ -5,7 +5,7 @@
   <div class="row">
     <!-- main content -->
     @foreach($pages as $page)
-        <div class="card-page-content col-xs-10 col-xs-offset-1 col-md-6">
+        <div class="card-page-content col-xs-10 col-xs-offset-1 col-md-6" style=" font-family: 'Open Sans', sans-serif;">
           <div class="card-title-page">
             <h4 class="card-heading">{{ $page -> title }}</h4>
           </div>

@@ -5,7 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container top-container">
+<div class="container top-container" style=" font-family: 'Open Sans', sans-serif;">
   <!-- Tab panes -->
       <div class="row">
         <div class="col-md-8 link">

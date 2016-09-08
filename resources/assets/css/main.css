@@ -1,10 +1,14 @@
 body {
-    font-family: 'Baloo Tamma', cursive;
     background-color: #E0E1E2;
     padding-top:70px;
+  }
+
+  .navbar-fixed-top{
+  font-family: 'Baloo Tamma', cursive;
 }
 .top-container{
   padding-top:50px;
+  font-family: 'Open Sans', sans-serif;
 
 }
 

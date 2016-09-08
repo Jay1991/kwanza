@@ -3,7 +3,7 @@
 @endphp
 
 @foreach($suggestions as $suggestion)
-<a href="{{ url('/post/'.$suggestion -> id.'/nextPage/'.$firstpage) }}" style="text-decoration:none; color:inherit;">
+<a href="{{ url('/post/'.$suggestion -> id.'/nextPage/'.$firstpage) }}" style="font-family: 'Open Sans', sans-serif; text-decoration:none; color:inherit;">
 <div class="card col-xs-10 col-xs-offset-1 col-md-6 col-sm-10 col-sm-offset-1">
   <div class="row">
   <div class="img-card col-md-4 col-sm-4 col-xs-10 col-xs-offset-1">
