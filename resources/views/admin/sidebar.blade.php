@@ -31,7 +31,8 @@
     <ul class="sidebar-menu">
       <li class="header">ACTIVITIES</li>
       <!-- Optionally, you can add icons to the links -->
-      <li class="active"><a href="{{ url('/admin/create_post')}}"><span>Posts</span></a></li>
+      <li class="active"><a href="{{ url('/home')}}"><span>Posts</span></a></li>
+      <li class="active"><a href="{{ url('/admin/create_post')}}"><span>Create Post</span></a></li>
       <li><a href="{{ url('/link')}}"><span>Another Link</span></a></li>
       <li class="treeview">
         <a href="#"><span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
@@ -40,6 +41,20 @@
           <li><a href="#">Link in level 2</a></li>
       </ul>
       </li>
+      @if (Auth::guest())
+          <li><a href="{{ url('/login') }}">#Login</a></li>
+      @else
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  {{ Auth::user()->name }} <span class="caret"></span>
+              </a>
+
+              <ul class="dropdown-menu" role="menu">
+                  <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                  <li><a href="{{ url('/register') }}">#Register</a></li>
+              </ul>
+          </li>
+      @endif
     </ul><!-- /.sidebar-menu -->
   </section>
   <!-- /.sidebar -->

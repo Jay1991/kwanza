@@ -35,14 +35,91 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- customs styling -->
 <style>
 
-    .img-card-view {
-      width: 100%;
-      height:auto;;
-      border-top-left-radius:2px;
-      border-top-right-radius:2px;
-      display:block;
-      overflow: hidden;
-    }
+/*styling for card*/
+
+.card {
+display: block;
+margin-bottom: 20px;
+line-height: 1.42857143;
+background-color: #fff;
+border-radius: 2px;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+transition: box-shadow .25s;
+}
+
+.card-page-content {
+display: block;
+margin-bottom: 20px;
+line-height: 1.42857143;
+background-color: #fff;
+border-radius: 2px;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+transition: box-shadow .25s;
+
+min-height: 70vh;
+}
+
+.card:hover {
+box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.img-card {
+width: 100%;
+height:250px;
+border-top-left-radius:2px;
+border-top-right-radius:2px;
+display:block;
+overflow: hidden;
+}
+
+.img-card-view {
+width: 100%;
+height:auto;;
+border-top-left-radius:2px;
+border-top-right-radius:2px;
+display:block;
+overflow: hidden;
+}
+
+.img-card img{
+width: 100%;
+height: inherit;
+align: middle;
+margin-top: 15px;
+object-fit:cover;
+transition: all .25s ease;
+}
+
+.card-content {
+padding:5px;
+text-align:left;
+}
+
+.card-title {
+margin-top:0px;
+font-weight: 700;
+font-size: 1.65em;
+}
+
+.card-title a {
+color: #000;
+text-decoration: none !important;
+}
+
+.card-title-page {
+margin-top:0px;
+}
+
+.card-heading {
+font-weight: 700;
+font-size: 1.65em;
+}
+
+hr.line {
+background-color: #fff;
+border-top: 2px dotted #8c8b8b;
+}
+
 </style>
 
 </head>

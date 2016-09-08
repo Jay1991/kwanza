@@ -36,7 +36,7 @@
                   </div>
               </div>
           </div>
-          <a href="">
+          <a href="admin/notPublished">
           <div class="panel-footer">
               <span class="pull-right fa fa-arrow-circle-right"></span>
               <div>Total</div>
@@ -57,7 +57,7 @@
                   </div>
               </div>
           </div>
-          <a href="">
+          <a href="admin/published">
           <div class="panel-footer">
               <span class="pull-right fa fa-arrow-circle-right"></span>
               <div>Total</div>
@@ -78,7 +78,7 @@
                   </div>
               </div>
           </div>
-          <a href="">
+          <a href="admin/showPost">
           <div class="panel-footer">
               <span class="pull-right fa fa-arrow-circle-right"></span>
               <div>Total</div>

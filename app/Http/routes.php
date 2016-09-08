@@ -11,13 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController@index');
 
-Route::get('/view', function () {
-    return view('view');
-});
+Route::get('about', 'IndexController@about');
+
+Route::get('privacy', 'IndexController@privacy');
+
+Route::get('contact', 'IndexController@contact');
+
+Route::get('tag/{tag}', 'IndexController@tag');
+
+Route::get('post/{id}/nextPage/{number}', 'IndexController@nextPage');
 
 Route::get('/view_end', function () {
     return view('view_end');
@@ -25,13 +29,47 @@ Route::get('/view_end', function () {
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('home', 'HomeController@index');
 
 Route::get('admin', 'AdminController@index');
 
-Route::get('admin/create_post', 'AdminController@create_post');
+Route::get('admin/create_post', 'AdminController@showCreatePost');
 
-Route::get('/link', function(){
+Route::post('admin/storePost', 'AdminController@storePost');
+
+Route::get('admin/showAddMediaToPost', 'AdminController@showAddMediaToPost');
+
+Route::post('admin/AddMediaToPost/{id}', 'AdminController@AddMediaToPost');
+
+Route::post('admin/addPost', 'AdminController@addPost');
+
+Route::get('admin/showPost', 'AdminController@showPost');
+
+Route::get('admin/editPage/{id}', 'AdminController@editPage');
+
+Route::post('admin/storeEditedPage/{id}', 'AdminController@storeEditedPage');
+
+Route::get('admin/showPage/{id}', 'AdminController@showPage');
+
+Route::get('admin/addPage/{id}', 'AdminController@addPage');
+
+Route::post('admin/storePage/{id}', 'AdminController@storePage');
+
+Route::get('admin/editPost/{id}', 'AdminController@editPost');
+
+Route::post('admin/storeEditedPost/{id}', 'AdminController@storeEditedPost');
+
+Route::get('admin/deletePage/{id}', 'AdminController@deletePage');
+
+Route::get('admin/deletePost/{id}', 'AdminController@deletePost');
+
+Route::get('admin/notPublished', 'AdminController@notPublished');
+
+Route::get('admin/publish/{id}', 'AdminController@publish');
+
+Route::get('admin/published', 'AdminController@published');
+
+Route::get('link', function(){
 
   $data['tasks'] = [
     [

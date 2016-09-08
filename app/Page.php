@@ -6,7 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Page extends Model
 {
-    public function posts(){
-      return $this -> belongsTo('App\Post');
+
+    protected $fillable = ['post_id'];
+
+    public function post(){
+      return $this -> belongsTo('App\Post','post_id', 'id');
     }
 }

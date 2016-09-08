@@ -1,144 +1,63 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fixed">
+<div class="container top-container">
   <div class="row">
-    <!-- main content -->
-    <div class="card col-xs-10 col-xs-offset-1 col-md-10" style="height:160px; ">
-      <div class="img-card-view text-center" href="{{ url('/view') }}" style="width:210px; float: none; margin: 0 auto;">
-          <img class="img-responsive" src="img/chinese_symbols_for_end.png" style="" />
-          <h4 class="card-heading">THE END</h4>
+    <div class="col-xs-10 col-xs-offset-1 col-md-6">
+        <div class="row">
+          <div class="card-end col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+            <div class="img-card-view text-center" href="{{ url('/view') }}" style="width:210px; float: none; margin: 0 auto;">
+                <img class="img-responsive" src="../../../media/chinese_symbols_for_end.png" />
+                <h4 class="card-heading">THE END</h4>
+            </div>
+          </div>
+
+          <div style="clear:both;"></div>
+          <div class="card-end col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+            <div>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4 img-card-small-view">
+                    <img class="img-thumbnail" src="../../../media/{{ $posts -> media}}" />
+                </div>
+                <div  class="col-md-7 col-sm-7 col-xs-7">
+                  <h4 class="card-title text-center">{{ $posts -> title }}</h4>
+                </div>
+              </div>
+              <div style="">
+                <h3>Share Na Marafiki Wa </h3>
+                <div class="btn-group btn-group-justified">
+                  <a href="" class="btn btn-social-icon btn-facebook">
+                    <span class="fa fa-facebook fa-2x"></span>
+                  </a>
+                  <a  href="" class="btn btn-social-icon btn-">
+                    <span class="fa fa-whatsapp fa-2x"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
+
     </div>
+    <div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs">
+      <nav data-spy="affix" data-offset-top="0" data-offset-bottom="100" style="background-color:blue; height:600px; width:300px; position:fixed;">
+
+      </nav>
+    </div>
+
+
+
   </div>
 
-    <br>
+<div class="clear:fix"></div>
+  <!-- suggestions contents -->
 
-      <div class="row">
-        <div class="card col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" style="">
-          <div class="card-content row" style="height:150;">
-          <div class="img-card-small-view col-xs-5 col-md-3 col-sm-4" href="">
-              <img class="img-thumbnail" src="img/gif.600x" style="height:auto;" />
-          </div>
-          <div  class="col-xs-7 col-md-9 col-sm-8">
-            <h4 class="card-title text-center">Interesting Facts You Probably Din't Know About Eminem</h4>
-          </div>
-          </div>
-
-          <div class="row" style="height:100px;">
-            <h3>Share Na Marafiki Wa </h3>
-            <div class="btn-group btn-group-justified">
-              <a href="" class="btn btn-social-icon btn-facebook">
-                <span class="fa fa-facebook fa-2x"></span>
-              </a>
-              <a  href="" class="btn btn-social-icon btn-whatsapp">
-                <span class="fa fa-whatsapp fa-2x"></span>
-              </a>
-              <a  href="" class="btn btn-social-icon btn-instagram">
-                <span class="fa fa-instagram fa-2x"></span>
-              </a>
-              <a  href="" class="btn btn-social-icon btn-twitter">
-                <span class="fa fa-twitter fa-2x"></span>
-              </a>
-            </div>
-        </div>
-        </div>
-      </div>
-
-  <div class="container-fixed">
+  <div class="container">
     <div class="row">
-      <!-- popular -->
-      <br>
-      <h4 class="card-title text-center">Popular</h4>
-      <div class="card col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
-        <a class="img-card" href="{{ url('/view') }}">
-            <img class="img-thumbnail" src="img/eminem.jpg" />
-        </a>
-        <div class="card-content">
-            <h4 class="card-title">
-                <a href="{{ url('/view') }}">
-                    Interesting Facts You Probably Din't Know About Eminem
-                </a>
-            </h4>
-            <div class="">
-                Eminem ni msanii mwenye pande mbili tofauti serious side, na nyingine ni...
-            </div>
-        </div>
+      <h4 class="card-title">Tiririka na hizi pia</h4>
+      @include('partials.suggestions')
     </div>
-
-    <div class="card col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
-      <a class="img-card" href="{{ url('/view') }}">
-          <img class="img-thumbnail" src="img/eminem.jpg" />
-      </a>
-      <div class="card-content">
-          <h4 class="card-title">
-              <a href="{{ url('/view') }}">
-                  Interesting Facts You Probably Din't Know About Eminem
-              </a>
-          </h4>
-          <div class="">
-              Eminem ni msanii mwenye pande mbili tofauti serious side, na nyingine ni...
-          </div>
-      </div>
-    </div>
-
-    <div class="card col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
-      <a class="img-card" href="{{ url('/view') }}">
-          <img class="img-thumbnail" src="img/eminem.jpg" />
-      </a>
-      <div class="card-content">
-          <h4 class="card-title">
-              <a href="{{ url('/view') }}">
-                  Interesting Facts You Probably Din't Know About Eminem
-              </a>
-          </h4>
-          <div class="">
-              Eminem ni msanii mwenye pande mbili tofauti serious side, na nyingine ni...
-          </div>
-      </div>
-    </div>
-
-    <div class="card col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
-      <a class="img-card" href="{{ url('/view') }}">
-          <img class="img-thumbnail" src="img/eminem.jpg" />
-      </a>
-      <div class="card-content">
-          <h4 class="card-title">
-              <a href="{{ url('/view') }}">
-                  Interesting Facts You Probably Din't Know About Eminem
-              </a>
-          </h4>
-          <div class="">
-              Eminem ni msanii mwenye pande mbili tofauti serious side, na nyingine ni...
-          </div>
-      </div>
-    </div>
-
-    <div class="card col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
-      <a class="img-card" href="{{ url('/view') }}">
-          <img class="img-thumbnail" src="img/eminem.jpg" />
-      </a>
-      <div class="card-content">
-          <h4 class="card-title">
-              <a href="{{ url('/view') }}">
-                  Interesting Facts You Probably Din't Know About Eminem
-              </a>
-          </h4>
-          <div class="">
-              Eminem ni msanii mwenye pande mbili tofauti serious side, na nyingine ni...
-          </div>
-      </div>
-    </div>
-
-    </div>
-
   </div>
 </div>
 
-</div>
-
-
-
-
-</div>
 @endsection
