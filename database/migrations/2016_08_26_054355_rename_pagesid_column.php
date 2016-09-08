@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class RenamePagesColumn extends Migration
+class RenamePagesIdColumn extends Migration
 {
     /**
      * Run the migrations.

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class RenamePostsColumn extends Migration
+class RenamePostsIdColumn extends Migration
 {
     /**
      * Run the migrations.
