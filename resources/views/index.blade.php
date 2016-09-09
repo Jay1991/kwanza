@@ -8,7 +8,7 @@
 <div class="container top-container" style=" font-family: 'Open Sans', sans-serif;">
   <!-- Tab panes -->
       <div class="row">
-        <div class="col-md-8 link">
+        <div class="col-md-8  link">
         @foreach($posts as $post)
         <a href="{{ url('/post/'.$post -> id.'/nextPage/'.$firstpage) }}">
           <div class="card">
