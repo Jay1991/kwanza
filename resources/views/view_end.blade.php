@@ -33,25 +33,14 @@
                   <h4 class="card-title text-center">{{ $posts -> title }}</h4>
                 </div>
               </div>
-              <div style="">
-                <h3>Share Na Marafiki Wa </h3>
-                <div class="btn-group btn-group-justified">
-
-
-                  <div class="fb-share-button" data-href="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" data-layout="button_count" data-size="small"
+              <div class="row">
+                  <div class="col-md-7 col-sm-7 col-xs-7">
+                    <h3>Share Na Marafiki</h3>
+                  </div>
+                  <div class="fb-share-button col-md-4 col-sm-4 col-xs-4 pull-left" data-href="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" data-layout="button_count" data-size="small"
                    data-mobile-iframe="true">
-                   <a class="fb-xfbml-parse-ignore" target="_blank"
-                   href="https://www.facebook.com/sharer/sharer.php?u=">
-                   Share</a>
+                   <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=">Share</a>
                  </div>
-
-                  <a href="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" class="btn btn-social-icon btn-facebook">
-                    <span class="fa fa-facebook fa-2x"></span>
-                  </a>
-                  <a href="" class="btn btn-social-icon btn-">
-                    <span class="fa fa-whatsapp fa-2x"></span>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
