@@ -26,10 +26,13 @@
               <div style="">
                 <h3>Share Na Marafiki Wa </h3>
                 <div class="btn-group btn-group-justified">
-                  <a href="" class="btn btn-social-icon btn-facebook">
+                  @php
+                    $firstpage = 1;
+                  @endphp
+                  <a href="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" class="btn btn-social-icon btn-facebook">
                     <span class="fa fa-facebook fa-2x"></span>
                   </a>
-                  <a  href="" class="btn btn-social-icon btn-">
+                  <a href="" class="btn btn-social-icon btn-">
                     <span class="fa fa-whatsapp fa-2x"></span>
                   </a>
                 </div>
@@ -44,9 +47,6 @@
 
       </nav>
     </div>
-
-
-
   </div>
 
 <div class="clear:fix"></div>

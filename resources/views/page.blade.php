@@ -17,7 +17,9 @@
             <p class="text-justify">#{{ $page -> number }} {{ $page -> page_title }}</p>
             <br>
             <div class="img-card-view text-center">
-              <img class="img-responsive center-block" src="../../../media/{{ $page -> media}}"/>
+              <a href="{{ url('post/'.$page -> post_id.'/nextPage/'.($page->number + 1)) }}">
+                <img class="img-responsive center-block" src="../../../media/{{ $page -> media}}"/>
+              </a>
               <small class="source">via <a>{{ $page -> media_source }}</a></small>
             </div>
             <br>
