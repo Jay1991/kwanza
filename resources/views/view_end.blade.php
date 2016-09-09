@@ -1,4 +1,14 @@
 @extends('layouts.app')
+@section('meta')
+@php
+  $firstpage = 1;
+@endphp
+<meta property="og:url"           content="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="{{ $posts->title }}" />
+<meta property="og:description"   content="{{ $posts->summary }}" />
+<meta property="og:image"         content="{{ $posts->media }}" />
+@endsection
 
 @section('content')
 <div class="container top-container">
@@ -26,9 +36,15 @@
               <div style="">
                 <h3>Share Na Marafiki Wa </h3>
                 <div class="btn-group btn-group-justified">
-                  @php
-                    $firstpage = 1;
-                  @endphp
+
+
+                  <div class="fb-share-button" data-href="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" data-layout="button_count" data-size="small"
+                   data-mobile-iframe="true">
+                   <a class="fb-xfbml-parse-ignore" target="_blank"
+                   href="https://www.facebook.com/sharer/sharer.php?u=">
+                   Share</a>
+                 </div>
+
                   <a href="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" class="btn btn-social-icon btn-facebook">
                     <span class="fa fa-facebook fa-2x"></span>
                   </a>

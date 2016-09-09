@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    @yield('meta')
 
     <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -21,6 +22,18 @@
 
 </head>
 <body id="app-layout" id="myBlapy">
+  <!-- facebook sdk -->
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#42A4DB; font-size:20px;">
         <div class="container">
             <div class="navbar-header">
