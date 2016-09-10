@@ -62,6 +62,11 @@
                         <textarea class="form-control" rows="5" name="contents"></textarea>
                   </div>
 
+                  <div class="form-group col-md-12">
+                      <label for="name">Page contents source</label>
+                          <input id="name" type="text" class="form-control" name="source" value="">
+                  </div>
+
                   <div class="col-md-12">
                           <div class="row col-md-4">
                             <div class="form-group col-md-12 text-center" >

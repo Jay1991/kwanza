@@ -19,6 +19,7 @@
         <small>{{ $page -> media_source }}</small>
     </div>
     <br>
+    Source:<a href="{{ $page -> source }}"><small>{{ $page -> source }}</small></a>
     <div class="card-read-more">
       <p>{{ $page -> contents }}</p>
     </div>
@@ -29,9 +30,9 @@
     </div>
     <div>
       <div class="pull-right" style="margin-bottom: 10px;">
-      <a href="{{ url('admin/addPage/'.$page -> id) }}" class="text-center" style="margin-bottom: 15px;">
-        <button class="btn btn-success">Add Page</button>
-      </a>
+        <a href="{{ url('admin/addPage/'.$page -> id) }}" class="text-center" style="margin-bottom: 15px;">
+          <button class="btn btn-success">Add Page</button>
+        </a>
     </div>
       <div class="text-center" style="margin-bottom: 10px;">
       <a href="{{ url('admin/deletePage/'.$page -> id) }}" class="text-center" style="margin-bottom: 15px;">

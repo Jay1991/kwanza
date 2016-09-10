@@ -9,7 +9,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">
 
-          <h4 class="pull-left">Edit Page of {{ $pages -> title }}</h4>
+          <h4 class="pull-left">Edit Page of {{ $pages -> page_title }}</h4>
             <button class="btn btn-primary pull-right" data-toggle="collapse" data-target="#collapse1"><i class="fa fa-plus"></i></button>
             <div class="clearfix"></div>
         </div>
@@ -32,7 +32,10 @@
                       <label for="email">Page Contents(summary)</label>
                         <textarea class="form-control" rows="5" id="" name="contents"></textarea>
                   </div>
-
+                  <div class="form-group col-md-12">
+                      <label for="name">Page Contents source</label>
+                          <input id="name" type="text" class="form-control" name="source" value="">
+                  </div>
                     <div class="form-group col-md-12 text-center" >
                         <label for="image_file" class="pull-left">Media</label>
                         <input type="file" class="form-control" id="" name="mediaPage"  value="">

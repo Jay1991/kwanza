@@ -22,7 +22,7 @@ class AdminController extends Controller
   {
       $this->middleware('auth');
   }
-  
+
   public function index() {
 
     return view('admin.post');
@@ -206,6 +206,7 @@ class AdminController extends Controller
       $page -> contents = $request -> get('contents');
       $page -> media = $newFileNamePage;
       $page -> media_source = $media_source;
+      $page -> source = $request -> get('source');
       $page -> post() -> associate($post);
       $page -> save();
 
@@ -287,6 +288,7 @@ class AdminController extends Controller
     $newPage -> contents = $request -> get('contents');
     $newPage -> media = $newFileNamePage;
     $newPage -> media_source = $media_source;
+    $newPage -> source = $request -> get('source');
     $newPage -> post_id = $post_id;
     $newPage -> save();
 
@@ -318,6 +320,7 @@ class AdminController extends Controller
     $page -> number = $request -> get('number');
     $page -> page_title = $request -> get('page_title');
     $page -> contents = $request -> get('contents');
+    $page -> source = $request -> get('source');
     $page -> media = $newFileName;
     $page -> media_source = $media_source;
     $page -> save();

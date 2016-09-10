@@ -25,6 +25,7 @@
             <br>
             <div class="card-read-more">
               <p class="text-justify">{{ $page -> contents }}</p>
+              <small class="source">Source:<a>{{ $page -> source }}</a></small>
             </div>
             <br>
             <hr class="line">

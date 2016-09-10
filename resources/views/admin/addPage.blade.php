@@ -31,6 +31,10 @@
                       <label for="email">Page Contents(summary)</label>
                         <textarea class="form-control" rows="5" id="" name="contents"></textarea>
                   </div>
+                  <div class="form-group col-md-12">
+                      <label for="name">Page Contents source</label>
+                          <input id="name" type="text" class="form-control" name="source" value="">
+                    </div>
 
                   <div class="form-group col-md-12 text-center" >
                         <label for="image_file" class="pull-left">Media</label>

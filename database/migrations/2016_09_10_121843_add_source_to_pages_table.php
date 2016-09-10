@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddPageTitleToPages extends Migration
+class AddSourceToPagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddPageTitleToPages extends Migration
     public function up()
     {
         Schema::table('pages', function (Blueprint $table) {
-            $table -> text('page_title');
+            $table->text('source')->nullable();
         });
     }
 
@@ -25,8 +25,7 @@ class AddPageTitleToPages extends Migration
     public function down()
     {
         Schema::table('pages', function (Blueprint $table) {
-            $table -> dropColumn('page_title');
-
+          $table->dropColumn('source');
         });
     }
 }
