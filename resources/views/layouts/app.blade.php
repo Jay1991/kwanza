@@ -62,7 +62,9 @@
               <!-- Right Side Of Navbar -->
               @include('partials.tags')
           </div>
-          <div class="hidden-md" style="height:50px; background-color:yellow;">TANGAZA NASI</div>
+          <div class="hidden-md text-center" style="height:50px;">
+              <h5>YOUR ADS HERE</h5>
+          </div>
 
         </div>
 

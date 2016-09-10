@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fixed top-container">
+<div class="container top-container">
   <div class="row">
     <!-- main content -->
     @foreach($pages as $page)
@@ -34,9 +34,9 @@
         </div>
       </div>
   @endforeach
-  <div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs">
-    <nav data-spy="affix" data-offset-top="0" data-offset-bottom="100" style="background-color:blue; height:480px; width:300px; position:fixed;">
-
+  <div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs text-center">
+    <nav data-spy="affix" data-offset-top="0" data-offset-bottom="100" style="background-color:#42A4DB; height:480px; width:300px; position:fixed;">
+      <h5>YOUR ADS HERE</h5>
     </nav>
   </div>
 

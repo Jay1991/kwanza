@@ -31,43 +31,47 @@ Route::auth();
 
 Route::get('home', 'HomeController@index');
 
-Route::get('admin', 'AdminController@index');
+Route::group(['prefix' => 'admin'], function(){
 
-Route::get('admin/create_post', 'AdminController@showCreatePost');
+  Route::get('/', 'AdminController@index');
 
-Route::post('admin/storePost', 'AdminController@storePost');
+  Route::get('create_post', 'AdminController@showCreatePost');
 
-Route::get('admin/showAddMediaToPost', 'AdminController@showAddMediaToPost');
+  Route::post('storePost', 'AdminController@storePost');
 
-Route::post('admin/AddMediaToPost/{id}', 'AdminController@AddMediaToPost');
+  Route::get('showAddMediaToPost', 'AdminController@showAddMediaToPost');
 
-Route::post('admin/addPost', 'AdminController@addPost');
+  Route::post('AddMediaToPost/{id}', 'AdminController@AddMediaToPost');
 
-Route::get('admin/showPost', 'AdminController@showPost');
+  Route::post('addPost', 'AdminController@addPost');
 
-Route::get('admin/editPage/{id}', 'AdminController@editPage');
+  Route::get('showPost', 'AdminController@showPost');
 
-Route::post('admin/storeEditedPage/{id}', 'AdminController@storeEditedPage');
+  Route::get('editPage/{id}', 'AdminController@editPage');
 
-Route::get('admin/showPage/{id}', 'AdminController@showPage');
+  Route::post('storeEditedPage/{id}', 'AdminController@storeEditedPage');
 
-Route::get('admin/addPage/{id}', 'AdminController@addPage');
+  Route::get('showPage/{id}', 'AdminController@showPage');
 
-Route::post('admin/storePage/{id}', 'AdminController@storePage');
+  Route::get('addPage/{id}', 'AdminController@addPage');
 
-Route::get('admin/editPost/{id}', 'AdminController@editPost');
+  Route::post('storePage/{id}', 'AdminController@storePage');
 
-Route::post('admin/storeEditedPost/{id}', 'AdminController@storeEditedPost');
+  Route::get('editPost/{id}', 'AdminController@editPost');
 
-Route::get('admin/deletePage/{id}', 'AdminController@deletePage');
+  Route::post('storeEditedPost/{id}', 'AdminController@storeEditedPost');
 
-Route::get('admin/deletePost/{id}', 'AdminController@deletePost');
+  Route::get('deletePage/{id}', 'AdminController@deletePage');
 
-Route::get('admin/notPublished', 'AdminController@notPublished');
+  Route::get('deletePost/{id}', 'AdminController@deletePost');
 
-Route::get('admin/publish/{id}', 'AdminController@publish');
+  Route::get('notPublished', 'AdminController@notPublished');
 
-Route::get('admin/published', 'AdminController@published');
+  Route::get('publish/{id}', 'AdminController@publish');
+
+  Route::get('published', 'AdminController@published');
+
+});
 
 Route::get('link', function(){
 
