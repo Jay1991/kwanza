@@ -32,7 +32,7 @@
         </div>
         <div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs text-center">
           <nav data-spy="affix" data-offset-top="0" data-offset-bottom="100" style="position:fixed;">
-            <script data-cfasync='false' type='text/javascript' src='//clksite.com/adServe/banners?tid=163359_288755_5'></script>
+            <script data-cfasync='false' type='text/javascript' src='//clksite.com/adServe/banners?tid=163359_288755_7&type=shadowbox&size=300x250'></script>
           </nav>
         </div>
       </div>
