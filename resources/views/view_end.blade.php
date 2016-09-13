@@ -39,7 +39,7 @@
                   </div>
                   <div class="fb-share-button col-md-4 col-sm-4 col-xs-4 pull-left" data-href="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" data-layout="button_count" data-size="small"
                    data-mobile-iframe="true">
-                   <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}">Share</a>
+                   <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=">Share</a>
                  </div>
               </div>
             </div>
