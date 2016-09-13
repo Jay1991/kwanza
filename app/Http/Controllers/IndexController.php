@@ -16,7 +16,7 @@ class IndexController extends Controller
 {
     public function index(){
 
-      $posts = Post::where('published', '=', 1)->paginate(10);
+      $posts = Post::where('published', '=', 1)->orderBy('created_at', 'desc')->paginate(10);
 
       // $tags = Post::select('tag')->distinct()->get();
 
@@ -39,7 +39,7 @@ class IndexController extends Controller
             }
 
     public function tag($tag){
-      $posts = Post::where('tag', '=', $tag)->paginate(10);
+      $posts = Post::where('tag', '=', $tag)->orderBy('created_at', 'desc')->paginate(10);
 
       return view('byTag', compact('posts'));
     }
