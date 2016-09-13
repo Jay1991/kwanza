@@ -62,8 +62,8 @@
               <!-- Right Side Of Navbar -->
               @include('partials.tags')
           </div>
-          <div class="hidden-md text-center" style="height:50px;">
-            <script data-cfasync='false' type='text/javascript' src='//clksite.com/adServe/banners?tid=163359_288755_8&tagid=9'></script>
+          <div class="hidden-md text-center" style="height:50px; font-family: 'Baloo Tamma', cursive; color:white;">
+            <h5>TANGAZA NASI tiririka.co.tz@gmail.com<h5>
           </div>
         </div>
 
