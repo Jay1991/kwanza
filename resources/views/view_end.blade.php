@@ -3,7 +3,7 @@
 @php
   $firstpage = 1;
 @endphp
-<meta property="og:url"           content="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" />
+<meta property="og:url"           content="{{ Request::fullUrl() }}" />
 <meta property="og:type"          content="website" />
 <meta property="og:title"         content="{{ $posts->title }}" />
 <meta property="og:description"   content="{{ $posts->summary }}" />
