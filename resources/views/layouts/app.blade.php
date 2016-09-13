@@ -63,9 +63,8 @@
               @include('partials.tags')
           </div>
           <div class="hidden-md text-center" style="height:50px;">
-            <script data-cfasync='false' type='text/javascript' src='//clksite.com/adServe/banners?tid=163359_288755_4'></script>
+            <script data-cfasync='false' type='text/javascript' src='//clksite.com/adServe/banners?tid=163359_288755_8&tagid=9'></script>
           </div>
-
         </div>
 
 
