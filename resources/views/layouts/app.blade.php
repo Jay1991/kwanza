@@ -63,7 +63,7 @@
               @include('partials.tags')
           </div>
           <div class="hidden-md text-center" style="height:50px;">
-              <h5>YOUR ADS HERE</h5>
+            <script data-cfasync='false' type='text/javascript' src='//clksite.com/adServe/banners?tid=163359_288755_4'></script>
           </div>
 
         </div>
