@@ -23,8 +23,6 @@
 </head>
 <body id="app-layout" id="myBlapy">
 @yield('fbroot')
-
-
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#42A4DB; font-size:20px;">
         <div class="container">
             <div class="navbar-header">
