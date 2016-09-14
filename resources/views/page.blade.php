@@ -1,13 +1,4 @@
 @extends('layouts.app')
-@section('meta')
-@foreach($pages as $page)
-<meta property="og:url"           content="{{ url('post/'.$page -> post_id.'/nextPage/'.$page->number) }}" />
-<meta property="og:type"          content="website" />
-<meta property="og:title"         content="{{ $page->title }}" />
-<meta property="og:description"   content="{{ $page->summary }}" />
-<meta property="og:image"         content="{{ $page->media }}" />
-@endforeach
-@endsection
 
 @section('content')
 <div class="container top-container">

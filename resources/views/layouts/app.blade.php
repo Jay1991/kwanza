@@ -22,18 +22,8 @@
 
 </head>
 <body id="app-layout" id="myBlapy">
-  <!-- facebook sdk -->
-  <div id="fb-root"></div>
-  <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.async = true;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+@yield('fbroot')
+
 
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#42A4DB; font-size:20px;">
         <div class="container">
@@ -62,8 +52,8 @@
               <!-- Right Side Of Navbar -->
               @include('partials.tags')
           </div>
-          <div class="hidden-md text-center" style="height:50px; font-family: 'Baloo Tamma', cursive; color:white;">
-            <h5>TANGAZA NASI tiririka.co.tz@gmail.com<h5>
+          <div class="hidden-md text-center" style="height:50px;">
+            <h5>TANGAZA NASI tiririka.co.tz@gma<h5>
           </div>
         </div>
 
