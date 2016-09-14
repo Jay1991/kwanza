@@ -9,7 +9,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{{ $page->title }}" />
 <meta property="og:description" content="{{ $page->summary }}" />
-<meta property="og:image" content="localhost/tiririka/public/media/{{ $page->media }}" />
+<meta property="og:image" content="../../../media/{{ $page->media }}" />
 @endforeach
 @endsection
 

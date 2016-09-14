@@ -8,7 +8,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{{ $posts->title }}" />
 <meta property="og:description" content="{{ $posts->summary }}" />
-<meta property="og:image" content="localhost/tiririka/public/media/{{ $posts->media }}" />
+<meta property="og:image" content="../../../media/{{ $posts->media }}" />
 @endsection
 @section('fbroot')
 <!-- facebook sdk -->
