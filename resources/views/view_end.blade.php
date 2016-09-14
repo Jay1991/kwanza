@@ -3,11 +3,12 @@
 @php
   $firstpage = 1;
 @endphp
-<meta property="og:url"           content="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" />
-<meta property="og:type"          content="website" />
-<meta property="og:title"         content="{{ $posts->title }}" />
-<meta property="og:description"   content="{{ $posts->summary }}" />
-<meta property="og:image"         content="{{ $posts->media }}" />
+<title>{{ $posts->title }}</title>
+<meta property="og:url" content="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ $posts->title }}" />
+<meta property="og:description" content="{{ $posts->summary }}" />
+<meta property="og:image" content="localhost/tiririka/public/media/{{ $posts->media }}" />
 @endsection
 @section('fbroot')
 <!-- facebook sdk -->
@@ -51,8 +52,11 @@
                   <div class="col-md-7 col-sm-7 col-xs-7">
                     <h3>Share Na Marafiki</h3>
                   </div>
-                  <div class="fb-share-button col-md-4 col-sm-4 col-xs-4 pull-left" data-href="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}" data-layout="button_count" data-size="small"
-                   data-mobile-iframe="true">
+                  <div class="fb-share-button col-md-4 col-sm-4 col-xs-4 pull-left"
+                    data-href="{{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}"
+                    data-layout="button_count"
+                    data-size="small"
+                    data-mobile-iframe="true">
                    <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ url('/post/'.$posts -> id.'/nextPage/'.$firstpage) }}">Share</a>
                  </div>
               </div>

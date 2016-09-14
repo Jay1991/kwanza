@@ -4,11 +4,12 @@
 @php
   $firstpage = 1;
 @endphp
-<meta property="og:url"           content="{{ url('/post/'.$page -> post_id.'/nextPage/'.$firstpage) }}" />
-<meta property="og:type"          content="website" />
-<meta property="og:title"         content="{{ $page->title }}" />
-<meta property="og:description"   content="{{ $page->summary }}" />
-<meta property="og:image"         content="{{ $page->media }}" />
+<title>{{ $page->title }}</title>
+<meta property="og:url" content="{{ url('/post/'.$page -> post_id.'/nextPage/'.$firstpage) }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ $page->title }}" />
+<meta property="og:description" content="{{ $page->summary }}" />
+<meta property="og:image" content="localhost/tiririka/public/media/{{ $page->media }}" />
 @endforeach
 @endsection
 
