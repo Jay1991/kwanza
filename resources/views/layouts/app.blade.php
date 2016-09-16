@@ -23,6 +23,8 @@
 
 </head>
 <body id="app-layout" id="myBlapy">
+  <script type="text/javascript" src="//go.oclasrv.com/apu.php?zoneid=784544"></script>
+  <script src="//go.mobtrks.com/notice.php?p=784547&interstitial=1"></script>
 @yield('fbroot')
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#42A4DB; font-size:20px;">
         <div class="container">
