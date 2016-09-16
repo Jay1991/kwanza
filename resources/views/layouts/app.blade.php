@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="propeller" content="1c5867cbe420c72d1648baf4e8856d7c" />
     @yield('meta')
 
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -51,7 +52,7 @@
               @include('partials.tags')
           </div>
           <div class="hidden-md text-center" style="height:50px;">
-            <h5>TANGAZA NASI tiririka.co.tz@gma<h5>
+            <h5>TANGAZA NASI tiririka.co.tz@gmail.com<h5>
           </div>
         </div>
 
